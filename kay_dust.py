@@ -19,7 +19,7 @@ def run_step(name, func):
 def reflection_scan():
     print(Fore.YELLOW + "[*] Checking for reflected parameters (XSS hints)...")
 
-    payload = "kaysociety123"
+    payload = "<svg/onrandom=random onload=confirm('kaysociety found xss')>"
     findings = []
 
     try:
@@ -27,7 +27,7 @@ def reflection_scan():
     except:
         urls = []
 
-    for url in urls[:30]:  # limit for safety
+    for url in urls[:30]: 
         try:
             test_url = url + payload
             r = requests.get(test_url, timeout=5)
@@ -342,9 +342,9 @@ def generate_report(domain):
     print(f"[+] Report saved: {filename}")
 
 def final_dashboard(domain):
-    print(Fore.GREEN + "\n==============================")
-    print(Fore.GREEN + "     RECONX FINAL DASHBOARD")
-    print(Fore.GREEN + "==============================")
+    print(Fore.GREEN + "\n================================")
+    print(Fore.GREEN + "     KAYSOCIETY FINAL DASHBOARD")
+    print(Fore.GREEN + "=================================")
 
     def count(file):
         try:
@@ -364,17 +364,20 @@ def final_dashboard(domain):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Kay_recon -  Bug Bounty Recon Tool")
+    parser = argparse.ArgumentParser(description="Kay_dust -  Bug Bounty Recon Tool")
     parser.add_argument("domain", help="Target domain (example.com)")
     args = parser.parse_args()
 
     global DOMAIN
     DOMAIN = args.domain
 
-    print(Fore.CYAN + "\n============================================")
-    print(Fore.GREEN + "   KAY_RECON_PRO - BUG BOUNTY FRAMEWORK")
-    print(Fore.YELLOW + "   AUTHOR: KARABO KOSI (KAYSOCIETY)")
-    print(Fore.CYAN + "============================================\n")
+    print(Fore.CYAN + "\n=======================================================================================")
+    print(Fore.GREEN + "  KAY_DUST - BUG BOUNTY TOOL")
+    print(Fore.YELLOW + " AUTHOR: KARABO KOSI (KAYSOCIETY)")
+    print(Fore.GREEN + "  This is my first beta version of this tool, the full stable version is paid!! :) ")
+    print(Fore.YELLOW + " Intrested in buying the full stable version of this tool with extra features? ")
+    print(Fore.GREEN + "  CONTACTS: FB @KARABO KOSI | YT @Kaysociety404")
+    print(Fore.CYAN + "=======================================================================================\n")
 
     os.makedirs("output", exist_ok=True)
 
