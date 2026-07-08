@@ -18,7 +18,7 @@
 
 
 
-\*LightRecon_securityis a powerful, reconnaissance tool designed for bug bounty hunters and penetration testers.
+\*LightRecon_security is a powerful, reconnaissance tool designed for bug bounty hunters and penetration testers.
 
 
 
