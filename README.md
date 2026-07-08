@@ -4,7 +4,7 @@
 
 
 
-> ⚡ Advanced Bug Bounty Reconnaissance Framework
+> ⚡ Advanced Bug Bounty Reconnaissance Framework / LightRecon_security
 
 > Built for speed, automation, efficiency and real-world security workflows
 
@@ -18,7 +18,7 @@
 
 
 
-\*KAYSOCIETY ---> kay_dust is a powerful, reconnaissance tool designed for bug bounty hunters and penetration testers.
+\*LightRecon_securityis a powerful, reconnaissance tool designed for bug bounty hunters and penetration testers.
 
 
 
@@ -72,9 +72,9 @@ It automates the full recon pipeline — from subdomain discovery to vulnerabili
 
 ```bash
 
-git clone https://github.com/kaysociety/kay_dust
+git clone https://github.com/whoiskay404/LightRecon_security
 
-cd kay_dust
+cd LightRecon_security
 
 ```
 
